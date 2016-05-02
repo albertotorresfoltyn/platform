@@ -42,7 +42,7 @@ var FormsyDate = _react2.default.createClass({
       }
     }, this.props, {
       ref: this._setMuiComponentAndMaybeFocus,
-      defaultValue: this.props.value,
+      defaultDate: this.props.value,
       onChange: this.handleValueChange,
       errorText: this.getErrorMessage(),
       value: this.getValue()

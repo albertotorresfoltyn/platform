@@ -37,7 +37,9 @@ var FormsyTime = _react2.default.createClass({
   render: function render() {
     return _react2.default.createElement(_timePicker2.default, _extends({}, this.props, {
       ref: this._setMuiComponentAndMaybeFocus,
-      onChange: this.handleValueChange
+      onChange: this.handleValueChange,
+      defaultTime: this.props.value,
+      value: this.getValue()
     }));
   }
 });

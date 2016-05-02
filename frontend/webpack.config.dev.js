@@ -9,6 +9,7 @@ var webpack = require('webpack');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var jeet                  = require("jeet");
 var rupture               = require("rupture");
+var WebpackNotifierPlugin = require("webpack-notifier");
 
 var resolve = {
   extensions: ["", ".js", ".jsx", ".json", ".css", ".styl"],
@@ -36,6 +37,8 @@ module.exports = {
     use: [jeet(), rupture()]
   },
   plugins: [
+    new WebpackNotifierPlugin(),
+    new webpack.NoErrorsPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new ExtractTextPlugin('bundle.css', { allChunks: true }),
     new webpack.NoErrorsPlugin()

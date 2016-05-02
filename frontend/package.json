@@ -1,7 +1,7 @@
 {
   "name": "redux-boilerplate",
   "version": "0.0.0",
-  "description": "Boilerplate for Docker apps",
+  "description": "Boilerplate for React apps",
   "main": "index.js",
   "scripts": {
     "test": "$(npm bin)/mocha  --compilers js:babel/register --recursive --require ./test.setup.js src/scripts/**/_tests/",
@@ -9,8 +9,8 @@
     "watch": "ENV=development ./node_modules/.bin/webpack --progress -wcv --config ./webpack.config.dev.js",
     "build": "ENV=production ./node_modules/.bin/webpack --progress -cv --config ./webpack.config.js"
   },
-  "author": "Tony Holdstock-Brown",
-  "license": "ISC",
+  "author": "Alberto Torres",
+  "license": "",
   "devDependencies": {
     "babel": "^5.8.23",
     "babel-eslint": "^4.1.3",
@@ -19,7 +19,7 @@
     "babel-runtime": "^5.8.25",
     "chai": "^3.4.1",
     "css-loader": "^0.21.0",
-    "cssnext": "^1.8.4",
+    "postcss-cssnext": "^1.8.4",
     "eslint": "^1.7.3",
     "eslint-loader": "^1.1.0",
     "eslint-plugin-react": "^3.6.3",
@@ -37,9 +37,11 @@
     "redbox-react": "^1.1.1",
     "style-loader": "^0.13.0",
     "webpack": "^1.12.2",
+    "webpack-notifier": "1.2.1",
     "webpack-dev-server": "^1.12.1"
   },
   "dependencies": {
+    "webpack-notifier": "1.2.1",
     "classnames": "^2.2.3",
     "css-loader": "^0.21.0",
     "file-loader": "^0.8.5",
@@ -48,12 +50,13 @@
     "history": "^1.13.1",
     "immutable": "^3.7.5",
     "jeet": "^6.1.2",
-    "lodash": "^3.10.1",
+    "lodash": "^4.0.0",
     "material-ui": "^0.14.4",
     "normalize.css": "^3.0.3",
-    "react": "^0.14.8",
+    "react": "^15.0.2",
     "react-css-modules": "^3.6.7",
-    "react-dom": "^0.14.0",
+    "react-tap-event-plugin": "0.2.2",
+    "react-dom": "^15.0.2",
     "react-hot-loader": "^1.3.0",
     "react-redux": "^4.0.0",
     "react-router": "^1.0.2",

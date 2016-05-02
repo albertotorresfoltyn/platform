@@ -18,7 +18,8 @@ syncReduxAndRouter(history, store, (state) => state.router);
 import App from './app.js';
 import {
   Dashboard,
-  NotFound
+  NotFound,
+  Login
 } from 'components/scenes';
 
 export const Routes = (
@@ -27,6 +28,7 @@ export const Routes = (
     <Redirect from="/" to="/home" />
       <Route path='/' component={ App }> //application entry point
          <Route path="home" component={ Dashboard } />
+         <Route path="login" component={ Login } />
          <Route path='*' component={ NotFound } />
       </Route>
     </Router>
