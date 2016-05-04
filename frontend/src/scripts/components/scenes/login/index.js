@@ -2,13 +2,13 @@ import React, { Component, PropTypes } from 'react'
 import { Form } from 'formsy-react'
 import {RaisedButton} from 'material-ui'
 import {FormsyText} from 'formsy-material-ui'
-import classNames from 'styles.styl'
+import classNames from './styles.styl'
 import classname  from 'classnames';
 
 export default class ChatMessageForm extends Component {
   constructor (props) {
     super(props)
-    this.state = {};
+    this.state = {email: '', password: ''};
     this.submit = this.submit.bind(this)
     this.refMessageInput = c => this.messageInput = c
   }
